@@ -1,4 +1,4 @@
-class AdaptadorDistancia(private val servicioExterno: CalculoDistanciaCoords) : CalculoDistanciaPuntos {
+class AdaptadorDistancia(private val servicioExterno: ServicioExterno) : CalculoDistanciaPuntos {
     override fun calcularDistancia(origen: Punto, destino: Punto): Double {
         val (parteEntera, parteDecimal) = servicioExterno.calcularDistancia(
             origen.x, origen.y,

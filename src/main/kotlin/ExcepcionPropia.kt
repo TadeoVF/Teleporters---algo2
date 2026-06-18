@@ -1,1 +1,0 @@
-class ExcepcionPropia(message: String) : RuntimeException(message)
